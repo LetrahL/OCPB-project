@@ -3,13 +3,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: #f4f4f4; 
+  background-color: #061f3f; 
   color: #333;
 }
 
 /* ================== STICKY HEADER ================== */
 .site-header {
-  background-color: #0a2240;
+  background-color: #061f3f;
   padding: 20px 5%; /* Adjusted padding for the larger logo */
   display: flex;
   justify-content: space-between;
@@ -83,9 +83,9 @@ body {
 
 /* ================== CARD CONTAINER & STYLES (FLEXBOX VERSION) ================== */
 .container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 40px auto;
+  width: 99%;
+  max-width: 1920px;
+  margin: 20px auto;
   
   /* --- Flexbox Rules --- */
   display: flex;
@@ -94,7 +94,7 @@ body {
 }
 
 .card {
-  background-color: #ffffff;
+  background-color: #061f3f;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -109,16 +109,18 @@ body {
 
 .card img {
   width: 50%;
-  height: 200px;
-  object-fit: cover;
+  height: 125px;
+  object-fit: scale-down;
   align-self: center;
 }
 
 .card p {
   padding: 20px;
   line-height: 1.6;
-  color: #666;
+  color: #ffeeee;
   flex-grow: 1; 
+  font-size: 20px;
+  text-align: center;
 }
 
 .card .btn {
@@ -132,6 +134,9 @@ body {
   margin: 20px;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  max-width: 30%;
+  width: 40%;
+  align-self: center; /* Center the button horizontally */
 }
 
 .card .btn:hover {
